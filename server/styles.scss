@@ -1,0 +1,16 @@
+$dark-color: #A352CC;
+$light-color: #FF5050;
+
+#page {
+  background-color: $dark-color;
+  transition: background-color 2s;
+}
+
+#page.light {
+  background-color: $light-color;
+}
+
+h2 {
+  text-align: center;
+  margin: 40px;
+}

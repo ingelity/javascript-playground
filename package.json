@@ -1,0 +1,28 @@
+{
+  "name": "javascript_playground",
+  "version": "1.0.0",
+  "description": "Latest JavaScript stack playground.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ingelity",
+    "javascript",
+    "playground"
+  ],
+  "author": "ingelity",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "2.3.4",
+    "express": "4.13.3"
+  },
+  "devDependencies": {
+    "css-loader": "0.19.0",
+    "node-sass": "3.3.3",
+    "sass-loader": "2.0.1",
+    "style-loader": "0.12.4",
+    "webpack": "1.12.2",
+    "webpack-dev-server": "^1.12.0"
+  }
+}
