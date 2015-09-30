@@ -1,3 +1,6 @@
+// NoErrorsPlugin stops webpack from outputting anything when there's an error
+// in compiling. e.g. eslint loader warnings will fail the build.
+
 var webpack = require('webpack');
 
 // output.publicPath has to end with a slash
@@ -10,7 +13,8 @@ module.exports = {
     publicPath: "http://localhost:8080/assets/"
   },
   plugins : [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
   ],
   module: {
     loaders: [
