@@ -1,12 +1,12 @@
 // var http = require('http');
-var express = require('express');
-var app = express();
-
 // var server = http.createServer(function(req, res) {
 //   res.end('Hi!\n');
 // });
-
 // server.listen(1337);
+// console.log('node.js server started');
+
+var express = require('express');
+var app = express();
 
 app.get('/', function(req, res) {
   res.render('index');
@@ -21,5 +21,3 @@ var server = app.listen(3000, function() {
 });
 
 require('./webpackDevServer');
-
-// console.log('node.js server started');

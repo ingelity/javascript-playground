@@ -19,3 +19,19 @@ var server = new WebpackDevServer(compiler, {
 
 server.listen(8080);
 console.log('webpack-dev-server started');
+/*
+compiler.watch({}, function (error) {
+  if (error) return console.error('server watcher failed:', error);
+
+  clearModuleCache();
+  console.log('compiled and cleared module cache');
+});
+
+function clearModuleCache() {
+  for (var module in require.cache) {
+    if (module.indexOf('/node_modules/') === -1) {
+      delete require.cache[ module ];
+    }
+  }
+}
+*/
